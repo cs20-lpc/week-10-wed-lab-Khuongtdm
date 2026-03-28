@@ -95,7 +95,7 @@ int LinkedList<T>::getLength() const {
 
 template <typename T>
 void LinkedList<T>::insert(int position, const T& elem) {
-    if (position < 0 || position >= this->length) {
+    if (position < 0 || position > this->length) {
         throw string("insert: error, position out of bounds");
     }
 
